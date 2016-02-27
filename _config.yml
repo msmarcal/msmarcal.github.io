@@ -1,0 +1,42 @@
+# Site settings
+title: msmarcal website
+description: 'Biker | Geek | Programmer | Entrepreneur'
+url: 'http://smarcal.com'
+baseurl: '/'
+disqus_shortname: 'marcelomarcalblog'
+# google_analytics: 'UA-XXXXXX-X'
+
+host: 0.0.0.0
+port: 4000
+
+author:
+  name: 'Marcelo Subtil Marçal'
+  email: marcelo@smarcal.com
+  twitter_username: msmarcal
+  facebook_username: msmarcal
+  github_username:  msmarcal
+  linkedin_username:  msmarcal
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
