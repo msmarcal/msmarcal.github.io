@@ -77,6 +77,16 @@
               </li>
             {% endif %}
 
+            {% if site.author.spotify_username %}
+              <!-- Lastfm -->
+              <li class="navigation__item">
+                <a href="https://open.spotify.com/user/{{ site.author.spotify_username }}" title="{{ site.author.spotify_username }} on Spotify" target="_blank">
+                  <i class="icon icon-social-spotify"></i>
+                  <span class="label">Spotify</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.lastfm_username %}
               <!-- Lastfm -->
               <li class="navigation__item">
@@ -86,7 +96,6 @@
                 </a>
               </li>
             {% endif %}
-
 
             {% if site.author.email %}
               <!-- Email -->
