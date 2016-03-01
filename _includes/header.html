@@ -9,7 +9,7 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}" title="home">
-          <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
+          <img src="{{ "images/msmarcal-profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="msmarcal Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -37,16 +37,6 @@
               </li>
             {% endif %}
 
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
             {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
@@ -66,6 +56,37 @@
                 </a>
               </li>
             {% endif %}
+
+            {% if site.author.facebook_username %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.youtube_username %}
+              <!-- youtube -->
+              <li class="navigation__item">
+                <a href="https://www.youtube.com/user/{{ site.author.youtube_username }}" title="{{ site.author.youtube_username }} on YouTube" target="_blank">
+                  <i class="icon icon-social-youtube"></i>
+                  <span class="label">YouTube</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.lastfm_username %}
+              <!-- Lastfm -->
+              <li class="navigation__item">
+                <a href="http://www.last.fm/user/{{ site.author.github_username }}" title="{{ site.author.lastfm_username }} on lastfm" target="_blank">
+                  <i class="icon icon-social-lastfm"></i>
+                  <span class="label">lastfm</span>
+                </a>
+              </li>
+            {% endif %}
+
 
             {% if site.author.email %}
               <!-- Email -->
