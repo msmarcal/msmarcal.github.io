@@ -3,6 +3,8 @@ title: msmarcal website
 description: 'Biker | Geek | Programmer | Entrepreneur | Musician Wannabe'
 url: 'http://smarcal.com'
 baseurl: '/'
+keywords: 'msmarcal, Marcelo Subtil Marçal, Marcelo Subtil Marcal, Marcelo Marcal, Marcelo Marçal'
+language: 'en'
 disqus_shortname: 'marcelomarcalblog'
 google_analytics: 'UA-45418215-1'
 
@@ -15,7 +17,7 @@ author:
   twitter_username: msmarcal
   facebook_username: msmarcal
   github_username:  msmarcal
-  linkedin_username:  msmarcal
+  linkedin_username: msmarcal
   lastfm_username: msmarcal
   youtube_username: msmarcal
   spotify_username: marcelomarcal
